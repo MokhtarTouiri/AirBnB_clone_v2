@@ -8,6 +8,9 @@ from datetime import datetime
 import os.path
 
 def do_pack():
+    """
+    function dopack
+    """
     date = datetime.now().strftime("%Y%m%d%H%M%S")
     file_path = "versions/web_static_{}.tgz".format(date)
     if os.path.isdir("versions") is False:
